@@ -22,14 +22,17 @@ h1, em   { text-decoration: underline; }	/* h1裡的em */
             color: SteelBlue;
             font-family: "times new roman", times, serif; }
 }/* for iphone X, iphone 12 mini*/
-@media only screen and (width: 393px) and (height: 852px) and (-webkit-device-pixel-ratio: 3) 
+@media only screen 
+    and (width: 393px) 
+    and (height: 852px) 
+    and (-webkit-device-pixel-ratio: 3) 
 { 
         body  { background-color: LightGrey ; }
         h1    { color: white; }
         p     { font-size: 14pt;
                 color: DarkBlue;
                 font-family: "times new roman", times, serif; }
-} /* for iphone 15*/
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-min--moz-device-pixel-ratio: 3), 
         only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3)
 {

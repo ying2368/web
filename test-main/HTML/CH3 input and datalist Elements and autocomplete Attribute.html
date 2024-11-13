@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>New HTML5 autocomplete Attribute and datalist Element</title>
+   </head>
+   <body>
+      <form method = "post" autocomplete = "on">
+            <p><label for = "txtList">Birth Month:
+                <input type = "text" id = "txtList" 
+                placeholder = "Select a month" list = "months" />
+                <datalist id = "months">
+                <option value = "January">
+                <option value = "February">
+                <option value = "March">
+                <option value = "April">
+                <option value = "May">
+                <option value = "June">
+                <option value = "July">
+                <option value = "August">
+                <option value = "September">
+                <option value = "October">
+                <option value = "November">
+                <option value = "December">
+                </datalist>
+            </label></p>
+            <p><label>First Name:
+                <input type = "text" id = "firstName" 
+                placeholder = "First name" autocomplete = "on" /> (First name)
+            </label></p>
+            
+            <p><input type = "submit" value = "Submit" />
+                <input type = "reset" value = "Clear" /></p>
+      </form>
+   </body>
+</html>

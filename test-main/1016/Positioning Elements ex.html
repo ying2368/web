@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Relative Positioning</title>
+      <style type = "text/css">
+            p           {   font-size: 24px;
+                            font-family: verdana, arial, sans-serif; }
+            span        {   color: red;
+                           font-size: 24px;
+                           font-family: verdana, arial, sans-serif;
+                            height: 1em; }
+            .super      {   color: red;
+                            position: absolute;
+                            top: 69px;
+                            left: 20px;
+                             }    
+            .shiftleft  {   color: black;
+                            position: relative;
+                            left: -20px;
+                             }
+            .shiftright {   color: BLACK;
+                            position: relative;
+                            left: 20px;
+                             }
+      </style>
+   </head>
+   <body>
+        <p>TEST Normal</p>
+        <p class = "shiftleft">TEST Left 20px</p>
+        <span class = "super">TEST absolute left:20px, top35px</span>
+        <p class = "shiftright">TEST Right 20px</p>
+   </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+   <head>
+		<meta charset = "utf-8">
+		<title>New HTML5 Form input Types</title>
+		<style type = "text/css">
+			p        { font-size: 12pt;
+						font-family: arial, sans-serif; }
+		</style>
+   </head>
+   <body>
+		<form method = "post" action = "http://www.deitel.com">
+			<p>
+				<label>Color:
+				   <input type = "color" autofocus />
+				   (Hexadecimal code such as #ADD8E6)
+			   </label>
+			</p>
+			<p>
+				<label>Date:
+				   <input type = "date" />
+					  (yyyy-mm-dd)
+				</label>
+			</p>
+			<p>
+				<label>Datetime:
+				   <input type = "datetime" />
+					  (yyyy-mm-ddThh:mm+ff:gg, such as 2012-01-27T03:15)
+				</label>
+			</p>
+			<p>
+				<label>Datetime-local:
+				   <input type = "datetime-local" />
+					  (yyyy-mm-ddThh:mm, such as 2012-01-27T03:15)
+				</label>
+			</p>
+			<p>
+				<label>Month:
+				   <input type = "month" /> (yyyy-mm)
+				</label>
+			</p>
+			<p>
+				<label>Week:
+				   <input type = "week" />
+					  (yyyy-Wnn, such as 2012-W01)
+				</label>
+			</p>
+			<p>
+				<label>Time:
+				   <input type = "time" /> (hh:mm)
+				</label>
+			</p>
+			<p>
+				<label>Email:
+				   <input type = "email" placeholder = "name@domain.com" 
+					  required /> (name@domain.com)
+				</label>
+			</p>
+			<p>
+				<label>Number:
+				   <input type = "number" 
+					  min = "0"
+					  max = "7"
+					  step = "1"
+					  value = "4" />
+				</label> (Enter a number between 0 and 7)
+			</p>
+			<p>
+				<label>Range:
+				   0 <input type = "range" 
+					  min = "0"
+					  max = "20"
+					  value = "10" /> 20
+				</label>
+			</p>
+			<p>
+				<label>Search:
+				   <input type = "search" placeholder = "search query" />
+				</label> (Enter your search query here.)
+			 </p>
+			<p>
+				<!-- 這裡很重要!! -->
+				<label>Tel:																											
+				   <input type = "tel" placeholder = "####-###-###" 
+					  pattern = "\d{4}-\d{3}-\d{3}" required />  <!-- \d:數字0~9  {4}:4個Number  -->
+					  ####-###-###
+				</label>
+			</p>
+
+			<p>
+				<input type = "submit" value = "Submit" />
+				<input type = "reset" value = "Clear" />
+			</p>
+		
+		</form>
+		<hr>
+		<!-- ---------------------------------------------------------- -->
+		<form method = "post" action = "http://www.deitel.com">
+			<p>
+				<label>Student ID:
+				   <input type = "Student ID" placeholder = "sxxxxxxx" 
+					  pattern = "s\d{7}"  autocomplete = "on" />
+					  sxxxxxxx
+				</label>
+			</p>
+			<p>
+				<label>YZU Email:
+				   <input type = "YZU Email" placeholder = "sxxxxxxx@mail.yzu.edu.tw" 
+					  pattern = "(s\d{7}@mail|[A-Za-z0-9]{1,}@saturn).yzu.edu.tw"  autocomplete = "on" />
+					  sxxxxxxx@mail.yzu.edu.tw xxxxx@saturn.yzu.edu.tw
+				</label>
+			</p>
+			<p>
+				<label>PTT ID:
+				   <input type = "PTT ID" 
+					  pattern = "[A-Za-z][A-Za-z0-9]{1-11}"  autocomplete = "on" />
+					  英數組成、第一碼不為數字、最多12碼、最少2碼
+				</label>
+			</p>
+			<p>
+				<label>身分證字號:
+				   <input type = "ID"
+					  pattern = "[A-Z][12]\d{8}"  autocomplete = "on" />
+					  大寫英文 + 1 or 2 + 八碼數字
+				</label>
+			</p>
+			<p>
+				<label>市話:
+				   <input type = "tellphone number" 
+					  pattern = "(\(\d{2}\)\d{3}-\d{4}|\(\d{2}\)\d{4}-\d{4}|\(\d{3}\) \d{3}-\d{3})" />
+					  (##) ###-####、(##) ####-####、(###) ###-###
+				</label>
+			</p>
+			<p>
+				<label>Cell Phone:
+				   <input type = "Cell Phone" placeholder = "09##-###-###" 
+					  pattern = "09\d{2}-\d{3}-\d{3}"  autocomplete = "on" />
+					  09##-###-###
+				</label>
+			</p>
+			<p>
+				<label>License Plate:
+				   <input type = "License Plate" 
+					  pattern = "([A-Z]{3}-[012356789]{4}|[A-Za-z0-9]{2}-\d{4}|\d{4}[A-Za-z0-9]{2})"  autocomplete = "on" />
+					  前三碼大寫英文-後四碼數字(不包含4)、兩碼英數-後四碼數字、前四碼數字-後兩碼不限
+				</label>
+			</p>
+			
+			<p>
+				<label>URL:
+				   <input type = "url" placeholder = "http://www.domainname.com" 
+				   autocomplete = "on"/>
+					  (http://www.domainname.com)
+				</label>
+			</p>
+
+			<p>
+				<input type = "submit" value = "Submit" />
+				<input type = "reset" value = "Clear" />
+			</p>
+		</form>
+		<footer>
+		  <h6>&copy; 1992-2012 by Deitel &amp; Associ<wbr>ates, Inc. 
+				All Rights Reserved.<h6>
+			 <address>
+				Contact us at <a href = "mailto:deitel@deitel.com">
+				deitel@deitel.com</a>
+			 </address>
+      </footer>
+   </body>
+</html>

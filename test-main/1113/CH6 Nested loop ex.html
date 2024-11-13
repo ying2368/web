@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>
+            Nested For Loop 
+        </title>
+        <style type = "text/css">
+            table
+              {
+               width : 200px;
+               height : 200px;
+              }
+           </style>
+        <script>
+            document.writeln( "<table border=1>");
+            for ( var i = 1; i <= 6; i++ )
+            {  
+                document.writeln( '<tr>');
+            
+                for ( var j = 1; j <= 3; j++ )
+                {
+                    if(i % 2 != 0 && j % 2 == 0)
+                        document.writeln( '<td style = "background-color:royalblue;"></td>');
+                    else if(i % 2 == 0 && j % 2 !=0 )
+                        document.writeln( '<td style = "background-color:royalblue;"></td>');
+                    else
+                        document.writeln( '<td style = "background-color:crimson;"></td>');
+                }
+                document.writeln( "</tr>");
+            }
+            document.writeln( "</table>" );
+            document.writeln( "<hr>" );
+            //=======================
+
+            var input = window.prompt( "Please input odd number:" );
+            input = parseInt(input);
+            
+            document.writeln( '<table border=1 style= width:' + input * 50 + '>');
+            for ( var i = 1; i <= input; i++ )
+            {  
+                document.writeln( '<tr>');
+                var k = (input+1)/2;
+                for ( var j = 1; j <= input; j++ )
+                {
+                    if(i == k)
+                        document.writeln( '<td style = "background-color:crimson;"></td>');
+                    else if(i < k && j > k-i && j <= input-(k-i))
+                        document.writeln( '<td style = "background-color:crimson;"></td>');
+                    else if(i > k && j >= k-1 && j <= k+1 )
+                        document.writeln( '<td style = "background-color:crimson;"></td>');
+                    else
+                        document.writeln( '<td style = "background-color:royalblue;"></td>');
+                }
+                document.writeln( "</tr>");
+            }
+            document.writeln( "</table>" );
+      </script>  
+   </head><body></body>
+</html>
