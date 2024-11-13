@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--   
+   left top, left bottom 表示漸層的起點（左上角）和終點（左下角）。
+   from(transparent), to(white) 定義了漸層的顏色變化，從透明（transparent）到白色（white）。
+   這樣可以讓反射效果更自然，因為它會隨著距離漸漸消失
+-->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Reflection</title>
+      <style type = "text/css">
+         img { margin-right: 30px; }
+         img.below
+         {
+            -webkit-box-reflect: below 5px
+               -webkit-gradient(
+                  linear, left top, left bottom,
+                  from(transparent), to(white));
+         }
+         div{
+            -webkit-box-reflect: below 5px
+               -webkit-gradient(
+                  linear, left top, left bottom,
+                  from(transparent), to(white));
+         }
+         img.right
+         {
+            -webkit-box-reflect: right 5px
+               -webkit-gradient(
+                  linear, left top, right top,  
+                  from(transparent), to(white));
+         }
+      </style>
+   </head>
+   <body>
+      <img class = "below" src = "/img/jhtp.png" width = "138" height = "180"
+         alt = "Java How to Program book cover">
+      <img class = "right" src = "/img/jhtp.png" width = "138" height = "180"
+         alt = "Java How to Program book cover">
+         <p><div>I love English</div></p>
+      </body>
+</html>

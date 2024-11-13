@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>Transitions</title>
+        <style type = "text/css">
+            #box1
+            {
+                border: 1px solid orange;
+                height : 30px;
+                width : 370px;
+                background-color: white;
+            }
+            #box2
+            {
+                border: 1px solid orange;
+                height : 30px;
+                width : 0px;
+                margin : -1px;
+                overflow: hidden;
+                background: -webkit-gradient(
+                    linear, left top, right top,
+                    color-stop(15%, white), color-stop(50%, yellow),
+                    color-stop(75%, orange) );
+                background: linear-gradient(
+                    left, white 15%, yellow 50%, orange 75% );
+                transition: 4s;
+            }
+       
+            #box1:hover #box2
+            {
+                width : 370px;
+            }
+
+        </style>
+   </head>
+   <body>
+        <div id="box1">
+            <div id="box2">
+            <p>0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%</p>
+            </div>
+        </div>
+   </body>
+</html>

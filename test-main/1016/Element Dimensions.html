@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 
+   visible: 內容不會被刪除, 會超出元素外
+   hidden: 內容會被刪除, 元素保持設定大小
+   scroll: 支援scroll bar
+   auto: 需要時才會出現scroll bar
+-->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Box Dimensions</title>
+      <style type = "text/css">
+        p { background-color: LightSkyBlue;
+            margin-bottom: 2em;
+            font-family: arial, helvetica, sans-serif; }
+      </style>
+   </head>
+   <body>
+      <p style = "width: 10%; height: 150px; overflow: visible;">
+      This box is only twenty percent ofthe width and has a fixed height.
+What do we do if it overflows? Set the overflow property to scroll!</p>
+      <p style = "width: 10%; height: 150px; overflow: hidden;">
+      This box is only twenty percent ofthe width and has a fixed height. What do we do if it overflows? Set the overflow property to scroll!</p>
+      <p style = "width: 10%; height: 150px; overflow: scroll;">
+      This box is only twenty percent ofthe width and has a fixed height. What do we do if it overflows? Set the overflow property to scroll!</p>
+      <p style = "width: 10%; height: 150px; overflow: auto;" >  
+      This box is only twenty percent ofthe width and has a fixed height. What do we do if it overflows? Set the overflow property to scroll!</p>
+   </body>
+</html>

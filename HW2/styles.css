@@ -1,0 +1,44 @@
+body     { font-family: arial, helvetica, sans-serif; }
+a.nodec  { text-decoration: none; }
+a:hover  { text-decoration: underline; }	/* underline : 文字之下  :hover 滑鼠移到該element才啟動 */
+li em    { font-weight: bold; }			    /*  li裡面的em */
+h1, em   { text-decoration: underline; }	/* h1裡的em */
+.special { color: purple; }
+
+@media screen
+{
+    body  { background-color: lightblue; }
+    h1    { font-family: verdana, helvetica, sans-serif;
+            color: PaleGreen; }
+    p     { font-size: 12pt;
+            color: white;
+            font-family: arial, sans-serif; }
+} /*for PC*/
+@media screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)
+{
+    body  { background-color: pink; }
+    h1    { color: SeaGreen; }
+    p     { font-size: 14pt;
+            color: SteelBlue;
+            font-family: "times new roman", times, serif; }
+}/* for iphone X, iphone 12 mini*/
+@media only screen 
+    and (width: 393px) 
+    and (height: 852px) 
+    and (-webkit-device-pixel-ratio: 3) 
+{ 
+        body  { background-color: LightGrey ; }
+        h1    { color: white; }
+        p     { font-size: 14pt;
+                color: DarkBlue;
+                font-family: "times new roman", times, serif; }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-min--moz-device-pixel-ratio: 3), 
+        only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3)
+{
+    body  { background-color: LightGrey ; }
+    h1    { color: white; }
+    p     { font-size: 14pt;
+            color: DarkBlue;
+            font-family: "times new roman", times, serif; }
+} /* for iphone 13*/

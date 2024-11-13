@@ -1,0 +1,14 @@
+/* <link rel = "stylesheet" type = "text/css" href = "styles.css"> */
+
+
+body     { font-family: arial, helvetica, sans-serif; }
+a.nodec  { text-decoration: none; }
+a:hover  { text-decoration: underline; }	/* underline : 文字之下  :hover 滑鼠移到該element才啟動 */
+li em    { font-weight: bold; }			    /*  li裡面的em */
+h1, em   { text-decoration: underline; }	/* h1裡的em */
+ul       { margin-left: 20px; }
+ul ul    { font-size: .8em; } 				/* ul裡的ul(空格不在意是底下第幾層) */
+p        { font-size: 12pt;					/* 8em:原本字體大小的0.8倍 */
+        font-family: arial, sans-serif; }
+.special { color: purple; }
+.class2  { font-size:18pt; }

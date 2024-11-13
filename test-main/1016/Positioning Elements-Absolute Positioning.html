@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--    
+    Z-index :  the stack order of an element     
+-->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Absolute Positioning</title>
+      <style type = "text/css">
+            .background_image   { position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        z-index: 1; }   /* 越大的在越上面  */
+            .foreground_image   { position: absolute;
+                        top: 25px;
+                        left: 100px;
+                        z-index: 2; }
+            .text       { position: absolute;
+                        top: 25px;
+                        left: 100px;
+                        z-index: 3;
+                        font-size: 20pt;
+                        font-family: tahoma, geneva, sans-serif; }
+                        
+            p           { font-size: 1.3em;
+                        font-family: verdana, arial, sans-serif; }
+            span        { color: red;
+                        font-size: .6em;
+                        height: 1em; }
+            .super      { position: relative;
+                        top: -1ex; }    /* top再往上1ex */
+            .sub        { position: relative;
+                        bottom: -1ex; }
+            .shiftleft  { position: relative;
+                        left: -1ex; }
+            .shiftright { position: relative;
+                        right: -1ex; }
+      </style>
+   </head>
+   <body>
+        <p><img src = "/img/background_image.png" class = "background_image"
+            alt = "First positioned image" /></p>
+        <p><img src = "/img/foreground_image.png" class = "foreground_image"
+            alt = "Second positioned image" /></p>
+        <p class = "text">Positioned Text</p>
+
+
+        <p>The text at the end of this sentence
+            <span class = "super">is in superscript</span>.</p>
+        <p>The text at the end of this sentence
+            <span class = "sub">is in subscript</span>.</p>
+        <p>The text at the end of this sentence
+            <span class = "shiftleft">is shifted left</span>.</p>
+        <p>The text at the end of this sentence
+            <span class = "shiftright">is shifted right</span>.</p>
+   </body>
+</html>
