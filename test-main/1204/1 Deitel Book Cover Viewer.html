@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Deitel Book Cover Viewer</title>
+    <style>
+        #thumbs {
+            width: 192px;
+            height: 370px;
+            padding: 5px;
+            float: left;
+        }
+        #mainimg {
+            width: 289px;
+            padding: 5px;
+            float: left;
+        }
+        #imgCover {
+            height: 373px;
+            transition: width 0.1s, height 0.1s;
+        }
+        img {
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        
+        let interval = null;
+        const speed = 6;
+        let count = 0;
+
+        function run() {
+            count += speed;
+            if (count >= 375) {
+                clearInterval(interval);
+                interval = null;
+                return;
+            }
+            const bigImage = document.getElementById("imgCover");
+            bigImage.style.width = `${0.7656 * count}px`;
+            bigImage.style.height = `${count}px`;
+        }
+
+        function display(imgfile) {
+            if (interval) return;
+
+            const bigImage = document.getElementById("imgCover");
+            bigImage.style.width = "0px";
+            bigImage.style.height = "0px";
+            bigImage.src = `../fullsize/${imgfile}`;
+            bigImage.alt = `Large version of ${imgfile}`;
+            
+            count = 0;
+            interval = setInterval(run, 10);
+        }
+
+        function start() {
+            const thumbs = [
+                { id: "jhtp", file: "jhtp.jpg" },
+                { id: "iw3htp", file: "iw3htp.jpg" },
+                { id: "cpphtp", file: "cpphtp.jpg" },
+                { id: "jhtplov", file: "jhtplov.jpg" },
+                { id: "cpphtplov", file: "cpphtplov.jpg" },
+                { id: "vcsharphtp", file: "vcsharphtp.jpg" }
+            ];
+
+            thumbs.forEach(thumb => {
+                const element = document.getElementById(thumb.id);
+                element.addEventListener("click", () => display(thumb.file));
+            });
+        }
+
+        window.addEventListener("load", start);
+        
+    </script>
+</head>
+<body>
+    <div id="mainimg">
+        <img id="imgCover" src="/fullsize/jhtp.jpg" alt="Full cover image">
+    </div>
+    <div id="thumbs">
+        <img src="/thumbs/jhtp.jpg" id="jhtp" alt="Java How to Program cover">
+        <img src="/thumbs/iw3htp.jpg" id="iw3htp" alt="Internet & World Wide Web How to Program cover">
+        <img src="/thumbs/cpphtp.jpg" id="cpphtp" alt="C++ How to Program cover">
+        <img src="/thumbs/jhtplov.jpg" id="jhtplov" alt="Java How to Program LOV cover">
+        <img src="/thumbs/cpphtplov.jpg" id="cpphtplov" alt="C++ How to Program LOV cover">
+        <img src="/thumbs/vcsharphtp.jpg" id="vcsharphtp" alt="Visual C# How to Program cover">
+    </div>
+
+    
+</body>
+</html>

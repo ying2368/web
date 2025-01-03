@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Recursive Fibonacci Function</title>
+      <style type = "text/css">
+         p       { margin: 0px; }
+      </style>
+      <script>
+         var output = ""; // stores the output  
+         function calculateFactorials()
+         {
+
+            for ( var i = 0; i <= 10; ++i ) 
+               output += "<p>F[" + i + "] = " + factorial( i ) + "</p>";
+            document.getElementById( "results" ).innerHTML = output;
+         } // end function calculateFactorials
+         function factorial( number )                  
+         {                                             
+            if ( number <= 1 )  // base case           
+               return 1;                               
+            else                                       
+               return factorial( number - 1 ) + factorial( number - 2 );
+         } // end function factorial                                             
+         window.addEventListener( "load", calculateFactorials, false );
+      </script>
+   </head>
+   <body>
+      <h1>Factorials of 0 to 10</h1>
+      <div id = "results"></div>
+   </body>
+</html>

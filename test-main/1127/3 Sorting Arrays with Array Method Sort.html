@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>Array Method sort</title> 
+        <style type = "text/css">
+            p { margin: 0; }
+        </style>       
+        <script>
+            function start()
+            {
+                var a = [ 10, 1, 9, 2, 8, 3, 7, 4, 6, 5 ];
+                 
+                outputArray( "Data items in original order: ", a, document.getElementById( "originalArray" ) );
+                 
+                a.sort( );
+                outputArray( "Data items in string comparison: ", a,  document.getElementById( "stringcmp" ) );
+                 
+                a.sort( Ascending );
+                outputArray( "Data items in ascending order: ", a,  document.getElementById( "asccmp" ) );
+                 
+                a.sort( Descending);
+                outputArray( "Data items in descending order: ", a,  document.getElementById( "descmp" ) );
+            }
+             
+            function outputArray( heading, theArray, output )
+            {
+                output.innerHTML = heading + theArray.join( " " );
+            }
+             
+            function Ascending( value1, value2 )
+            {
+                return parseInt( value1 ) - parseInt( value2 );
+            }
+             
+            function Descending( value1, value2 )
+            {
+                return parseInt( value2 ) - parseInt( value1 );
+            }
+                 
+            window.addEventListener( "load", start, false );
+
+        </script>
+    </head>
+    <body>
+      <h1>Sorting an Array</h1>
+      <p id = "originalArray"></p>
+      <p id = "stringcmp"></p>
+      <p id = "asccmp"></p>
+      <p id = "descmp"></p>
+   </body>
+</html>

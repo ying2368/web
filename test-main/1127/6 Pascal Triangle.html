@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Multidimensional Arrays</title>
+</head>
+<body>
+    <script>
+        var num = window.prompt("Please input a number:");
+        num = parseInt(num);
+        num = num + 1;
+
+        var arr = [];
+        var output = "";
+
+        for (var i = 0; i < num; i++) {
+            arr[i] = [];
+            arr[i][0] = 1; // 每行的第一個數為 1
+            output += "<p>1 ";
+
+            for (var j = 1; j < i; j++) {
+                arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+                output += arr[i][j] + " ";
+            }
+
+            if (i > 0) {
+                arr[i][i] = 1; // 每行的最後一個數為 1
+                output += "1";
+            }
+            output += "</p>";
+        }
+
+        document.body.innerHTML = output;
+    </script>
+</body>
+</html>

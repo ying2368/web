@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Simple Drawing Program</title>
+      <script>
+     function start(){
+          document.getElementById( "d1" ).addEventListener(
+          "click", showCoords, false );
+         }
+         function showCoords(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = "X coords: " + x + ", Y coords: " + y;
+            document.getElementById("coord").innerHTML = coords;
+         }
+         window.addEventListener( "load", start, false );
+      </script>
+      <style type = "text/css">
+           div { width: 400px;
+                 height : 400px;
+                 border: 1px solid #999999;
+                }
+      </style>
+   </head>
+   <body>
+      <p id = "coord"></p>
+      <div id="d1"></div>
+   </body>
+</html>

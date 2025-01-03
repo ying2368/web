@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <meta charset = "utf-8">
+         <title>Simple Drawing Program</title>
+         <style type = "text/css">
+            #canvas { width: 400px;
+               border: 1px solid #999999;
+                           border-collapse: collapse }
+            td      { width: 4px; height: 4px; margin: 0px; padding: 0px; }
+            .blue   { background-color: blue; }
+            .red    { background-color: red; }
+         </style>
+         <script>
+            function createCanvas()
+            {
+               var side = 100;
+               var tbody = document.getElementById( "tablebody" );
+               for ( var i = 0; i < side; ++i )
+               {
+                  var row = document.createElement( "tr" );
+                  for ( var j = 0; j < side; ++j )
+                  {
+                     var cell = document.createElement( "td" );
+                     row.appendChild( cell );
+                  }
+                  tbody.appendChild( row );
+               }
+               document.getElementById( "canvas" ).addEventListener("mousemove", processMouseMove, false );
+            }
+            function processMouseMove( e )
+            {
+               if ( e.target.tagName.toLowerCase() == "td" )
+               {
+                  if ( e.ctrlKey )
+                  {
+                     e.target.setAttribute( "class", "blue" );
+                  }
+                  if ( e.shiftKey )
+                  {
+                     e.target.setAttribute( "class", "red" );
+                  }
+               }
+            }
+            window.addEventListener( "load", createCanvas, false );
+
+            
+         </script>
+   </head>
+   <body>
+      <table id = "canvas">
+         <caption>Hold <em>Ctrl</em> (or <em>Control</em>) to draw blue.
+            Hold <em>Shift</em> to draw red.</caption>
+         <tbody id = "tablebody"></tbody>
+      </table>
+   </body>
+</html>
+ 

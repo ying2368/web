@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Random Dice Images</title> 
+      <style type = "text/css">
+         li { display: inline; margin-right: 10px; }
+         ul { margin: 0; }
+      </style>
+      <script>
+         var die1Image;
+         var die2Image;
+         var die3Image;
+         var isRolling = false;
+
+         function start()
+         {
+            die1Image = document.getElementById( "die1" );
+            die2Image = document.getElementById( "die2" );
+            die3Image = document.getElementById( "die3" );
+
+            document.getElementById( "start" ).addEventListener( "click", startRolling, false );
+            document.getElementById( "stop" ).addEventListener( "click", stopRolling, false );
+         } // end function start 
+         
+        function rollDice()
+        {
+            if (!isRolling) 
+                return;
+
+            setImage( die1Image );
+            setImage( die2Image );
+            setImage( die3Image );
+
+            setTimeout(rollDice, 300);
+        } 
+
+        function startRolling() {
+            if (!isRolling) {
+                isRolling = true;
+                rollDice(); // 开始第一次擲骰子
+            }
+        }
+
+        function stopRolling() {
+            isRolling = false;
+        }
+
+         function setImage( dieImg )
+         {
+            var dieValue = Math.floor( 1 + Math.random() * 6 );
+            dieImg.setAttribute( "src", "/img/die" + dieValue + ".png" );
+            dieImg.setAttribute( "alt", 
+               "die image with " + dieValue + " spot(s)" );
+         } // end function setImage
+
+         window.addEventListener( "load", start, false );  //新增事件
+      </script>
+   </head>
+   <body>
+    <ol>
+       <li><img id = "die1" src = "/img/blank.png" 
+            alt = "blank image"></li>
+       <li><img id = "die2" src = "/img/blank.png"
+            alt = "blank image"></li>
+       <li><img id = "die3" src = "/img/blank.png" 
+            alt = "blank image"></li>
+    </ol>
+    <form action = "#">
+        <input id = "start" type = "button" value = "start">
+    </form>
+    <form action = "#">
+        <input id = "stop" type = "button" value = "stop">
+    </form>
+ </body>
+</html>

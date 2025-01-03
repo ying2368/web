@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>Multidimensional Arrays</title>
+        <style type = "text/css">
+        ol { margin: 0; }
+        li { margin-right: 1em; display: inline; }
+        </style>      
+        <script>
+            function start()
+            {
+            var array1 = [ [ 1, 2, 3 ], // row 0  
+                            [ 4, 5, 6 ] ]; // row 1
+            var array2 = [ [ 1, 2 ], // row 0     
+                            [ 3 ], // row 1       
+                            [ 4, 5, 6 ] ]; // row 2
+             
+            outputArray( "Values in array1 by row", array1, document.getElementById( "output1" ) );
+            outputArray( "Values in array2 by row", array2, document.getElementById( "output2" ) );
+            }
+             
+            function outputArray( heading, theArray, output )
+            {
+                var results = "";
+                for ( var row in theArray )
+                {
+                    results += "<ol>";
+                 
+                    for ( var column in theArray[ row ] )
+                    {
+                        results += "<li>" + theArray[ row ][ column ] + "</li>";
+                    }
+                 
+                    results += "</ol>";
+            }
+            output.innerHTML = results;
+            }
+             
+            window.addEventListener( "load", start, false );
+
+      </script>
+   </head>
+   <body>
+      <h2>Values in array1 by row</h2>
+      <div id = "output1"></div>
+      <h2>Values in array2 by row</h2>
+      <div id = "output2"></div>
+   </body>
+</html>

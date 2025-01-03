@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <meta charset = "utf-8">
+         <title>Simple Drawing Program</title>
+         <style type = "text/css">
+            #canvas { width: 400px;
+               border: 1px solid #999999;
+                           border-collapse: collapse }
+            td      { width: 4px; height: 4px; margin: 0px; padding: 0px; }
+           
+         </style>
+         <script>
+            function createCanvas()
+            {
+               var side = 100;
+               var tbody = document.getElementById( "tablebody" );
+               for ( var i = 0; i < side; ++i )
+               {
+                  var row = document.createElement( "tr" );
+                  for ( var j = 0; j < side; ++j )
+                  {
+                     var cell = document.createElement( "td" );
+                     row.appendChild( cell );
+                  }
+                  tbody.appendChild( row );
+               }
+               document.getElementById( "canvas" ).addEventListener("mousemove", processMouseMove, false );
+            }
+            function processMouseMove( e )
+            {
+                var x = document.forms;
+                var input_color = x[0].color.value;
+
+               if ( e.target.tagName.toLowerCase() == "td" )
+               {
+                  if ( e.ctrlKey )
+                  {
+                     e.target.setAttribute( "style", "background-color: " + input_color );
+                  }
+                  if ( e.shiftKey )
+                  {
+                     e.target.setAttribute( "style", "background-color: white" );
+                  }
+               }
+            }
+            window.addEventListener( "load", createCanvas, false );
+
+            
+         </script>
+   </head>
+   <body>
+        <form>
+            Select Color:<input type = "color" id = "color" iautofocus />(Hexadecimal code such as #ADD8E6)
+        </form>
+        <table id = "canvas">
+            <caption>Hold <em>Ctrl</em> (or <em>Control</em>) to draw color.
+                Hold <em>Shift</em> to erase.</caption>
+            <tbody id = "tablebody"></tbody>
+        </table>
+   </body>
+</html>
+ 

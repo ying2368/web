@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>Box Shadow</title>
+        <style type = "text/css">
+        #start
+        {
+            border: 3px solid navy;
+            padding: 5px 20px;
+            background: lightcyan;
+            width: 100px;
+            text-align: center;
+            border-radius: 15px;
+            position: absolute;
+            top:100px;
+            left:100px;
+            box-shadow: 5px 5px 10px dimgrey;
+        }
+       
+        #start:active 
+        {
+            top:105px;
+            left:105px;
+            box-shadow: 0px 0px 0px dimgrey;
+        }
+        </style>
+        <script>
+            var counting = false;
+            var c=60;
+
+             function start()
+            {
+                document.getElementById( "start" ).addEventListener( "click", startCounting, false );
+                document.getElementById( "stop" ).addEventListener( "click", stopCounting, false );
+            } 
+
+            function count()
+            {
+                if(!counting)
+                    return;
+
+                document.getElementById("second").innerHTML = c;
+                c--;
+                
+                if (c >= 0) {
+                    countdownTimer = setTimeout(count, 1000);
+                } else {
+                    stopCounting();
+                }
+            }
+
+            function startCounting() {
+                if (!counting) {
+                    counting = true;
+                    count(); // 开始第一次擲骰子
+                }
+            }
+
+            function stopCounting() {
+                counting = false;
+                c=60;
+            }
+
+        </script>
+   </head>
+   <body onload = "start()">
+        <form action = "#">
+            <input id = "start" type = "button" value = "start">
+        </form>
+        <p id ="second">60</p>
+   </body>
+</html>

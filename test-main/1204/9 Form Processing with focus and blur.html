@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset = "utf-8">
+        <title>A Form Using focus and blur</title>
+        <style type = "text/css">
+            textarea    { width: 300px; height: 100px; }
+            label.fixed { width: 4em; float: left; }
+            #helpText   { font-family: sans-serif; color: blue; margin-top: 10px; }
+            p           { margin: 0; }
+        </style>
+        <script>
+            var helpArray = [ "Enter your name in this input box.",
+            "Enter your e-mail address in the format user@domain.",
+            "Check this box if you liked our site.",
+            "Enter any comments here that you'd like us to read.",
+            "This button submits the form to the server-side script.",
+            "This button clears the form.", "" ];
+            var helpText;
+            function init()
+            {
+            helpText = document.getElementById( "helpText" );
+            registerListeners(document.getElementById( "name" ), 0 );
+            registerListeners(document.getElementById( "email" ), 1 );
+            registerListeners(document.getElementById( "like" ), 2 );
+            registerListeners(document.getElementById( "comments" ), 3 );
+            registerListeners(document.getElementById( "submit" ), 4 );
+            registerListeners(document.getElementById( "reset" ), 5 );
+            }
+             
+            function registerListeners( object, messageNumber )
+            {
+            object.addEventListener( "focus",
+                function() { helpText.innerHTML = helpArray[ messageNumber ]; },
+                false );
+            object.addEventListener( "blur",
+                function() { helpText.innerHTML = helpArray[ 6 ]; }, false );
+            }
+            window.addEventListener( "load", init, false );
+
+
+      </script>
+   </head>
+   <body>
+      <form id = "myForm" action = "">
+         <p><label class = "fixed" for = "name">Name:</label>
+            <input type = "text" id =  "name" 
+               placeholder = "Enter name"></p>
+         <p><label class = "fixed" for = "email">E-mail:</label>
+            <input type = "email" id = "email" 
+               placeholder = "Enter e-mail address"></p>
+         <p><label>Click here if you like this site
+            <input type = "checkbox" id =  "like"></label></p>
+         <p><label for = "comments">Any comments?</p>
+         <textarea id =  "comments" 
+            placeholder = "Enter comments here"></textarea>
+         <p><input id = "submit" type = "submit">
+            <input id = "reset" type = "reset"></p>
+      </form>
+      <p id = "helpText"></p>
+   </body>
+</html>

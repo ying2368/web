@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Using Images Collection</title>
+    <script>
+        function start() {
+	      var button = document.getElementById( "border" );
+	      button.addEventListener( "click", change, false );
+	      var x = document.images;
+        var txt = "";
+          for (var i = 0; i < x.length; i++) {
+              txt = txt +  x[i].src + "<br>";
+          }
+        document.getElementById("out").innerHTML = txt;
+              }
+            function change() {
+        var x = document.images;
+        x[0].style.border = "10px dotted black";
+        }
+        window.addEventListener( "load", start, false );
+ 
+    </script>
+    </head>
+    <body>
+    <img src="/img/die1.png" alt="1">
+    <img src="/img/die2.png" alt="2">
+    <img src="/img/die3.png" alt="3">
+    <p id="out"></p>
+      <form action = "#">
+         <input id = "border" type = "button" value = "Change Border">
+      </form>
+    </body>
+</html>

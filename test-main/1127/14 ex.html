@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Dynamic Styles</title>
+      <script>
+            function start() {
+            var button = document.getElementById( "border" );
+            button.addEventListener( "click", Change, false );
+            }
+            function Change() {
+                var x = document.forms;
+                var inputColor=x[0].input_color.value;
+
+                document.body.setAttribute( "style", 
+                "background-color: " + inputColor );  
+            }
+            window.addEventListener( "load", start, false );
+      </script>
+   </head>
+   <body>
+        <form action = "#" name="form1">
+            <p>
+				<label>Color:
+				   <input type = "color" name="input_color" autofocus />
+				   (Hexadecimal code such as #ADD8E6)
+			   </label>
+			</p>
+            <input id = "border" type = "button" value = "Change Color">
+        </form>
+   </body>
+</html>
