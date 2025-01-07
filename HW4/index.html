@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>大富翁遊戲</title>
+        <style>
+            /* 全局樣式 */
+            body {
+                font-family: 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            /* 標題樣式 */
+            h1 {
+                text-align: center;
+                color: #2c3e50;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+                padding-bottom: 15px;
+                border-bottom: 3px solid #3498db;
+            }
+
+            h2 {
+                color: #2c3e50;
+                font-size: 1.8em;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            /* 輸入區域樣式 */
+            div:first-of-type {
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin-bottom: 30px;
+            }
+
+            /* 輸入框樣式 */
+            input[type="text"] {
+                width: 300px;
+                padding: 12px;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                font-size: 16px;
+                margin-right: 10px;
+                transition: border-color 0.3s ease;
+            }
+
+            input[type="text"]:focus {
+                border-color: #3498db;
+                outline: none;
+            }
+
+            /* 按鈕樣式 */
+            button {
+                background-color: #3498db;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            /* 遊戲室列表樣式 */
+            #room-list {
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            #room-list > div {
+                border-bottom: 1px solid #eee;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #room-list > div:last-child {
+                border-bottom: none;
+            }
+
+            #room-list p {
+                margin: 0;
+                font-size: 16px;
+            }
+
+            /* 遊戲室項目樣式 */
+            .room-item {
+                background-color: #fff;
+                margin-bottom: 10px;
+                padding: 15px;
+                border-radius: 4px;
+                transition: transform 0.2s ease;
+            }
+
+            .room-item:hover {
+                transform: translateX(5px);
+            }
+
+            /* 載入中提示樣式 */
+            #room-list > p {
+                text-align: center;
+                color: #666;
+                font-style: italic;
+            }
+
+            /* 響應式設計 */
+            @media screen and (max-width: 768px) {
+                body {
+                    padding: 10px;
+                }
+
+                input[type="text"] {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                button {
+                    width: 100%;
+                }
+
+                #room-list > div {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                #room-list button {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+   </head>
+   <body>
+        <h1>歡迎來到大富翁遊戲</h1>
+        <div>
+            <input type="text" id="room-name" placeholder="輸入新遊戲室名稱">
+            <button id="create-room">新增遊戲室</button>
+        </div>
+        <h2>目前可加入的遊戲室</h2>
+        <div id="room-list">
+            <p>載入中...</p>
+        </div>
+        <script>
+            // 載入目前的遊戲室列表
+            function loadRooms() {
+                fetch("list_rooms.php")
+                    .then(response => response.json())
+                    .then(data => {
+                        const roomList = document.getElementById("room-list");
+                        roomList.innerHTML = ""; // 清空內容
+                        if (data.length === 0) {
+                            roomList.innerHTML = "<p>目前沒有遊戲室，請新增一個。</p>";
+                        } else {
+                            data.forEach(room => {
+                                const roomItem = document.createElement("div");
+                                roomItem.innerHTML = `
+                                    <p>房間名稱: ${room.room_name} (ID: ${room.id})</p>
+                                    <button onclick="joinRoom(${room.id})">加入遊戲室</button>
+                                `;
+                                roomList.appendChild(roomItem);
+                            });
+                        }
+                    });
+            }
+
+            // 加入房間
+            function joinRoom(roomId) {
+                window.location.href = `game.html?room_id=${roomId}`;
+            }
+
+            // 新增房間
+            document.getElementById("create-room").addEventListener("click", function () {
+                const roomName = document.getElementById("room-name").value;
+                if (!roomName) {
+                    alert("請輸入房間名稱！");
+                    return;
+                }
+                fetch("create_room.php", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams({ room_name: roomName }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === "success") {
+                            alert("房間新增成功！");
+                            loadRooms(); // 重新載入房間列表
+                        } else {
+                            alert("新增房間失敗：" + data.message);
+                        }
+                    });
+            });
+
+            // 初始化，載入房間列表
+            loadRooms();
+        </script>
+   </body>
+</html>
