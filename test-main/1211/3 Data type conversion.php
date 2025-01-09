@@ -17,14 +17,14 @@
       ?>
       <p class = "head">Original values:</p>
       <?php
-         print( "<p>$testString is a(n) " . gettype( $testString ). "</p>" );
+         print( "<p>$testString is a(n) " . gettype( $testString ). "</p>" );   //gettype:顯示資料型態
          print( "<p>$testDouble is a(n) " . gettype( $testDouble ). "</p>" );
          print( "<p>$testInteger is a(n) " . gettype( $testInteger ). "</p>" );
       ?>
       <p class = "head">Converting to other data types:</p>
       <?php
          print( "<p>$testString " );
-         settype( $testString, "double" );
+         settype( $testString, "double" ); //settype:設定資料型態
          print( " as a double is $testString</p>" );
          print( "<p>$testString " );
          settype( $testString, "integer" );
