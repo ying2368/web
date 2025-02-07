@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSet xmlns="http://twd.water.gov.tw/opendata/wqb">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="qua_data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="update_date" type="xs:string" minOccurs="0" />
+                <xs:element name="update_time" type="xs:string" minOccurs="0" />
+                <xs:element name="qua_id" type="xs:string" minOccurs="0" />
+                <xs:element name="code_name" type="xs:string" minOccurs="0" />
+                <xs:element name="longitude" type="xs:string" minOccurs="0" />
+                <xs:element name="latitude" type="xs:string" minOccurs="0" />
+                <xs:element name="qua_cntu" type="xs:float" minOccurs="0" />
+                <xs:element name="qua_cl" type="xs:float" minOccurs="0" />
+                <xs:element name="qua_ph" type="xs:float" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet xmlns="">
+      <qua_data diffgr:id="qua_data1" msdata:rowOrder="0">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CS00        </qua_id>
+        <code_name>雙溪淨水場</code_name>
+        <longitude>121.569433</longitude>
+        <latitude>25.114194</latitude>
+        <qua_cntu>0.01</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data2" msdata:rowOrder="1">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CS01        </qua_id>
+        <code_name>衛理女中</code_name>
+        <longitude>121.55231</longitude>
+        <latitude>25.101757</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data3" msdata:rowOrder="2">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CS02        </qua_id>
+        <code_name>雙溪國小                </code_name>
+        <longitude>121.563886</longitude>
+        <latitude>25.106069</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data4" msdata:rowOrder="3">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CS03        </qua_id>
+        <code_name>華興加壓站</code_name>
+        <longitude>121.544384</longitude>
+        <latitude>25.099517</latitude>
+        <qua_cntu>0.17</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data5" msdata:rowOrder="4">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX00        </qua_id>
+        <code_name>長興淨水場</code_name>
+        <longitude>121.547873</longitude>
+        <latitude>25.014511</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.53</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data6" msdata:rowOrder="5">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX02        </qua_id>
+        <code_name>市政大樓</code_name>
+        <longitude>121.563997</longitude>
+        <latitude>25.037531</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.48</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data7" msdata:rowOrder="6">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX03        </qua_id>
+        <code_name>市議會</code_name>
+        <longitude>121.561975</longitude>
+        <latitude>25.038063</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.39</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data8" msdata:rowOrder="7">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX04        </qua_id>
+        <code_name>捷運忠孝復興站</code_name>
+        <longitude>121.54342</longitude>
+        <latitude>25.041477</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.43</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data9" msdata:rowOrder="8">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX05        </qua_id>
+        <code_name>南港高工</code_name>
+        <longitude>121.607462</longitude>
+        <latitude>25.05623</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.35</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data10" msdata:rowOrder="9">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX06        </qua_id>
+        <code_name>南港加壓站</code_name>
+        <longitude>121.616217</longitude>
+        <latitude>25.048584</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.37</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data11" msdata:rowOrder="10">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX07        </qua_id>
+        <code_name>挹翠加壓站</code_name>
+        <longitude>121.57391</longitude>
+        <latitude>25.021817</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data12" msdata:rowOrder="11">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX08        </qua_id>
+        <code_name>敦化國中                </code_name>
+        <longitude>121.546714</longitude>
+        <latitude>25.051571</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data13" msdata:rowOrder="12">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX09        </qua_id>
+        <code_name>信義運動中心</code_name>
+        <longitude>121.566774</longitude>
+        <latitude>25.031839</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.49</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data14" msdata:rowOrder="13">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX10        </qua_id>
+        <code_name>信義區公所</code_name>
+        <longitude>121.566847</longitude>
+        <latitude>25.03332</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data15" msdata:rowOrder="14">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX11        </qua_id>
+        <code_name>大安運動中心</code_name>
+        <longitude>121.545733</longitude>
+        <latitude>25.020576</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.51</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data16" msdata:rowOrder="15">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>CX12        </qua_id>
+        <code_name>南港運動中心</code_name>
+        <longitude>121.58184</longitude>
+        <latitude>25.048938</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data17" msdata:rowOrder="16">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG00        </qua_id>
+        <code_name>公館淨水場</code_name>
+        <longitude>121.530253</longitude>
+        <latitude>25.013286</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.54</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data18" msdata:rowOrder="17">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG01        </qua_id>
+        <code_name>捷運台北車站</code_name>
+        <longitude>121.517878</longitude>
+        <latitude>25.046309</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.44</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data19" msdata:rowOrder="18">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG02        </qua_id>
+        <code_name>捷運中正紀念堂站</code_name>
+        <longitude>121.518269</longitude>
+        <latitude>25.032422</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data20" msdata:rowOrder="19">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG03        </qua_id>
+        <code_name>萬華國中</code_name>
+        <longitude>121.498835</longitude>
+        <latitude>25.029107</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data21" msdata:rowOrder="20">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG04        </qua_id>
+        <code_name>華江社區配水池</code_name>
+        <longitude>121.493406</longitude>
+        <latitude>25.034988</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data22" msdata:rowOrder="21">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG06        </qua_id>
+        <code_name>忠孝國小</code_name>
+        <longitude>121.531533</longitude>
+        <latitude>25.042927</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data23" msdata:rowOrder="22">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG07        </qua_id>
+        <code_name>螢橋國小</code_name>
+        <longitude>121.514332</longitude>
+        <latitude>25.025075</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.53</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data24" msdata:rowOrder="23">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG08        </qua_id>
+        <code_name>中正運動中心</code_name>
+        <longitude>121.519379</longitude>
+        <latitude>25.038243</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data25" msdata:rowOrder="24">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>GG09        </qua_id>
+        <code_name>萬華運動中心</code_name>
+        <longitude>121.507085</longitude>
+        <latitude>25.047349</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data26" msdata:rowOrder="25">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT00        </qua_id>
+        <code_name>直潭淨水場               </code_name>
+        <longitude>121.528706</longitude>
+        <latitude>24.941926</latitude>
+        <qua_cntu>0.01</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data27" msdata:rowOrder="26">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT02        </qua_id>
+        <code_name>伸仗板配水池</code_name>
+        <longitude>121.543443</longitude>
+        <latitude>24.930234</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.56</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data28" msdata:rowOrder="27">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT10        </qua_id>
+        <code_name>中和加壓站</code_name>
+        <longitude>121.520562</longitude>
+        <latitude>24.989242</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data29" msdata:rowOrder="28">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT11        </qua_id>
+        <code_name>安康加壓站</code_name>
+        <longitude>121.509409</longitude>
+        <latitude>24.961604</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.49</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data30" msdata:rowOrder="29">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT12        </qua_id>
+        <code_name>頂溪站</code_name>
+        <longitude>121.51542</longitude>
+        <latitude>25.012836</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data31" msdata:rowOrder="30">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT13        </qua_id>
+        <code_name>中和國小</code_name>
+        <longitude>121.501594</longitude>
+        <latitude>24.999939</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data32" msdata:rowOrder="31">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT14        </qua_id>
+        <code_name>積穗國小</code_name>
+        <longitude>121.481461</longitude>
+        <latitude>24.99916</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.38</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data33" msdata:rowOrder="32">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT15        </qua_id>
+        <code_name>捷運大坪林站</code_name>
+        <longitude>121.5418</longitude>
+        <latitude>24.9831</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data34" msdata:rowOrder="33">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT16        </qua_id>
+        <code_name>十二張加壓站</code_name>
+        <longitude>121.541973</longitude>
+        <latitude>24.969335</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data35" msdata:rowOrder="34">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT17        </qua_id>
+        <code_name>景美女中</code_name>
+        <longitude>121.556175</longitude>
+        <latitude>24.980737</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.49</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data36" msdata:rowOrder="35">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT18        </qua_id>
+        <code_name>木柵動物園</code_name>
+        <longitude>121.581036</longitude>
+        <latitude>24.998347</latitude>
+        <qua_cntu>0.1</qua_cntu>
+        <qua_cl>0.43</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data37" msdata:rowOrder="36">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT20        </qua_id>
+        <code_name>公館加壓站</code_name>
+        <longitude>121.528744</longitude>
+        <latitude>25.011749</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data38" msdata:rowOrder="37">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT21        </qua_id>
+        <code_name>萬芳二號配水池</code_name>
+        <longitude>121.566371</longitude>
+        <latitude>25.002893</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.48</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data39" msdata:rowOrder="38">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT22        </qua_id>
+        <code_name>指南二加壓站</code_name>
+        <longitude>121.581084</longitude>
+        <latitude>24.977164</latitude>
+        <qua_cntu>0.06</qua_cntu>
+        <qua_cl>0.37</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data40" msdata:rowOrder="39">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT23        </qua_id>
+        <code_name>木柵二期配水池</code_name>
+        <longitude>121.586405</longitude>
+        <latitude>24.987187</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.34</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data41" msdata:rowOrder="40">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT24        </qua_id>
+        <code_name>三重加壓站</code_name>
+        <longitude>121.493942</longitude>
+        <latitude>25.063185</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data42" msdata:rowOrder="41">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT25        </qua_id>
+        <code_name>新北高中</code_name>
+        <longitude>121.489687</longitude>
+        <latitude>25.087331</latitude>
+        <qua_cntu>0.06</qua_cntu>
+        <qua_cl>0.42</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data43" msdata:rowOrder="42">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT26        </qua_id>
+        <code_name>指南六加壓站</code_name>
+        <longitude>121.587747</longitude>
+        <latitude>24.966246</latitude>
+        <qua_cntu>0.15</qua_cntu>
+        <qua_cl>0.32</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data44" msdata:rowOrder="43">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT30        </qua_id>
+        <code_name>大同加壓站</code_name>
+        <longitude>121.528053</longitude>
+        <latitude>25.068617</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.48</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data45" msdata:rowOrder="44">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT31        </qua_id>
+        <code_name>麗山國中</code_name>
+        <longitude>121.575688</longitude>
+        <latitude>25.081617</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data46" msdata:rowOrder="45">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT32        </qua_id>
+        <code_name>重慶國中</code_name>
+        <longitude>121.517998</longitude>
+        <latitude>25.075981</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data47" msdata:rowOrder="46">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT33        </qua_id>
+        <code_name>台北海洋技術學院</code_name>
+        <longitude>121.471272</longitude>
+        <latitude>25.108086</latitude>
+        <qua_cntu>0.07</qua_cntu>
+        <qua_cl>0.38</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data48" msdata:rowOrder="47">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT34        </qua_id>
+        <code_name>介壽國中</code_name>
+        <longitude>121.556437</longitude>
+        <latitude>25.056412</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.4</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data49" msdata:rowOrder="48">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT35        </qua_id>
+        <code_name>士林國中</code_name>
+        <longitude>121.52257</longitude>
+        <latitude>25.094366</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data50" msdata:rowOrder="49">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT36        </qua_id>
+        <code_name>陽明高中</code_name>
+        <longitude>121.517131</longitude>
+        <latitude>25.09184</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data51" msdata:rowOrder="50">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT37        </qua_id>
+        <code_name>捷運石牌站</code_name>
+        <longitude>121.515559</longitude>
+        <latitude>25.114523</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.35</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data52" msdata:rowOrder="51">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT38        </qua_id>
+        <code_name>天母加壓站</code_name>
+        <longitude>121.533302</longitude>
+        <latitude>25.120117</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.46</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data53" msdata:rowOrder="52">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT39        </qua_id>
+        <code_name>關渡國小</code_name>
+        <longitude>121.466879</longitude>
+        <latitude>25.126886</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.42</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data54" msdata:rowOrder="53">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT40        </qua_id>
+        <code_name>捷運淡水站</code_name>
+        <longitude>121.445718</longitude>
+        <latitude>25.167895</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.36</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data55" msdata:rowOrder="54">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT41        </qua_id>
+        <code_name>大屯配水池</code_name>
+        <longitude>121.504297</longitude>
+        <latitude>25.146133</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.39</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data56" msdata:rowOrder="55">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT42        </qua_id>
+        <code_name>北投加壓站</code_name>
+        <longitude>121.501415</longitude>
+        <latitude>25.118941</latitude>
+        <qua_cntu>-9</qua_cntu>
+        <qua_cl>-9</qua_cl>
+        <qua_ph>-9</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data57" msdata:rowOrder="56">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT50        </qua_id>
+        <code_name>松山加壓站</code_name>
+        <longitude>121.567763</longitude>
+        <latitude>25.064844</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data58" msdata:rowOrder="57">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT51        </qua_id>
+        <code_name>內溝里加壓站</code_name>
+        <longitude>121.623545</longitude>
+        <latitude>25.078675</latitude>
+        <qua_cntu>0.07</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data59" msdata:rowOrder="58">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT52        </qua_id>
+        <code_name>潭美國小</code_name>
+        <longitude>121.581401</longitude>
+        <latitude>25.059470</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.4</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data60" msdata:rowOrder="59">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT53        </qua_id>
+        <code_name>東湖國中</code_name>
+        <longitude>121.619542</longitude>
+        <latitude>25.072174</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.39</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data61" msdata:rowOrder="60">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT54        </qua_id>
+        <code_name>民生加壓站</code_name>
+        <longitude>121.554683</longitude>
+        <latitude>25.059159</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.44</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data62" msdata:rowOrder="61">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT55        </qua_id>
+        <code_name>興隆公營住宅1區</code_name>
+        <longitude>121.557859</longitude>
+        <latitude>24.988296</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data63" msdata:rowOrder="62">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT56        </qua_id>
+        <code_name>內湖四期加壓站</code_name>
+        <longitude>121.599911</longitude>
+        <latitude>25.072953</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data64" msdata:rowOrder="63">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT57        </qua_id>
+        <code_name>松山運動中心</code_name>
+        <longitude>121.550445</longitude>
+        <latitude>25.04847</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.44</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data65" msdata:rowOrder="64">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT58        </qua_id>
+        <code_name>台北小巨蛋</code_name>
+        <longitude>121.549978</longitude>
+        <latitude>25.050782</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.42</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data66" msdata:rowOrder="65">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT59        </qua_id>
+        <code_name>文山運動中心</code_name>
+        <longitude>121.559673</longitude>
+        <latitude>24.99701</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data67" msdata:rowOrder="66">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT60        </qua_id>
+        <code_name>安華加壓站</code_name>
+        <longitude>121.518831</longitude>
+        <latitude>24.95931</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.52</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data68" msdata:rowOrder="67">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT61        </qua_id>
+        <code_name>中山運動中心</code_name>
+        <longitude>121.521353</longitude>
+        <latitude>25.0547931</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data69" msdata:rowOrder="68">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT62        </qua_id>
+        <code_name>大同運動中心</code_name>
+        <longitude>121.5163107</longitude>
+        <latitude>25.0652302</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data70" msdata:rowOrder="69">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT63        </qua_id>
+        <code_name>大同區公所</code_name>
+        <longitude>121.515091</longitude>
+        <latitude>25.0660443</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.47</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data71" msdata:rowOrder="70">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT64        </qua_id>
+        <code_name>內湖運動中心</code_name>
+        <longitude>121.575204</longitude>
+        <latitude>25.078116</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.48</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data72" msdata:rowOrder="71">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT65        </qua_id>
+        <code_name>東湖加壓站</code_name>
+        <longitude>121.60913</longitude>
+        <latitude>25.073629</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data73" msdata:rowOrder="72">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT66        </qua_id>
+        <code_name>碧山里2加壓站</code_name>
+        <longitude>121.589318</longitude>
+        <latitude>25.091995</latitude>
+        <qua_cntu>0.08</qua_cntu>
+        <qua_cl>0.36</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data74" msdata:rowOrder="73">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT67        </qua_id>
+        <code_name>西康里加壓站</code_name>
+        <longitude>121.557686</longitude>
+        <latitude>25.085808</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data75" msdata:rowOrder="74">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT68        </qua_id>
+        <code_name>台北小城3加壓站</code_name>
+        <longitude>121.501447</longitude>
+        <latitude>24.94612</latitude>
+        <qua_cntu>0.24</qua_cntu>
+        <qua_cl>0.32</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data76" msdata:rowOrder="75">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT69        </qua_id>
+        <code_name>北投運動中心</code_name>
+        <longitude>121.509747</longitude>
+        <latitude>25.116687</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.36</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data77" msdata:rowOrder="76">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT70        </qua_id>
+        <code_name>士林運動中心</code_name>
+        <longitude>121.5215411</longitude>
+        <latitude>25.0893594</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data78" msdata:rowOrder="77">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT71        </qua_id>
+        <code_name>健康公宅1區</code_name>
+        <longitude>121.566496</longitude>
+        <latitude>25.054462</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.53</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data79" msdata:rowOrder="78">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT72        </qua_id>
+        <code_name>健康公宅2區</code_name>
+        <longitude>121.567467</longitude>
+        <latitude>25.054507</latitude>
+        <qua_cntu>0.02</qua_cntu>
+        <qua_cl>0.38</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data80" msdata:rowOrder="79">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT73        </qua_id>
+        <code_name>碧山里4加壓站</code_name>
+        <longitude>121.5880111</longitude>
+        <latitude>25.0987120</latitude>
+        <qua_cntu>0.16</qua_cntu>
+        <qua_cl>0.35</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data81" msdata:rowOrder="80">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT74        </qua_id>
+        <code_name>舊庄二加壓站</code_name>
+        <longitude>121.634263</longitude>
+        <latitude>25.034475</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.31</qua_cl>
+        <qua_ph>7.3</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data82" msdata:rowOrder="81">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT75        </qua_id>
+        <code_name>麗山加壓站</code_name>
+        <longitude>121.574786</longitude>
+        <latitude>25.085611</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.4</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data83" msdata:rowOrder="82">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT76        </qua_id>
+        <code_name>玫瑰一加壓站</code_name>
+        <longitude>121.493871</longitude>
+        <latitude>24.951364</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.41</qua_cl>
+        <qua_ph>7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data84" msdata:rowOrder="83">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT77        </qua_id>
+        <code_name>北投第一配水池</code_name>
+        <longitude>121.510014</longitude>
+        <latitude>25.140684</latitude>
+        <qua_cntu>0.06</qua_cntu>
+        <qua_cl>0.36</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data85" msdata:rowOrder="84">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT78        </qua_id>
+        <code_name>興隆公宅2區</code_name>
+        <longitude>121.562466</longitude>
+        <latitude>24.987939</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>7.2</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data86" msdata:rowOrder="85">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>JT80        </qua_id>
+        <code_name>大度加壓站</code_name>
+        <longitude>121.486149</longitude>
+        <latitude>25.121289</latitude>
+        <qua_cntu>0.03</qua_cntu>
+        <qua_cl>0.42</qua_cl>
+        <qua_ph>7.1</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data87" msdata:rowOrder="86">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM00        </qua_id>
+        <code_name>陽明淨水場</code_name>
+        <longitude>121.532248</longitude>
+        <latitude>25.151214</latitude>
+        <qua_cntu>0.04</qua_cntu>
+        <qua_cl>0.5</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data88" msdata:rowOrder="87">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM01        </qua_id>
+        <code_name>隧道                  </code_name>
+        <longitude>121.525111</longitude>
+        <latitude>25.146347</latitude>
+        <qua_cntu>0.07</qua_cntu>
+        <qua_cl>0.48</qua_cl>
+        <qua_ph>7.7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data89" msdata:rowOrder="88">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM02        </qua_id>
+        <code_name>中正路配水池                 </code_name>
+        <longitude>121.543536</longitude>
+        <latitude>25.151813</latitude>
+        <qua_cntu>0.05</qua_cntu>
+        <qua_cl>0.45</qua_cl>
+        <qua_ph>6.6</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data90" msdata:rowOrder="89">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM03        </qua_id>
+        <code_name>中山樓                 </code_name>
+        <longitude>121.552672</longitude>
+        <latitude>25.155813</latitude>
+        <qua_cntu>0.82</qua_cntu>
+        <qua_cl>0.42</qua_cl>
+        <qua_ph>7.5</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data91" msdata:rowOrder="90">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM04        </qua_id>
+        <code_name>鹿角坑(三加)</code_name>
+        <longitude>121.555752</longitude>
+        <latitude>25.183375</latitude>
+        <qua_cntu>0.53</qua_cntu>
+        <qua_cl>0.49</qua_cl>
+        <qua_ph>7.4</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data92" msdata:rowOrder="91">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM05        </qua_id>
+        <code_name>泉源國小</code_name>
+        <longitude>121.524364</longitude>
+        <latitude>25.149216</latitude>
+        <qua_cntu>0.1</qua_cntu>
+        <qua_cl>0.27</qua_cl>
+        <qua_ph>6.7</qua_ph>
+      </qua_data>
+      <qua_data diffgr:id="qua_data93" msdata:rowOrder="92">
+        <update_date>2019-12-19</update_date>
+        <update_time>01:15:00  </update_time>
+        <qua_id>YM06        </qua_id>
+        <code_name>三角埔加壓站</code_name>
+        <longitude>121.53337</longitude>
+        <latitude>25.128252</latitude>
+        <qua_cntu>0.31</qua_cntu>
+        <qua_cl>0.49</qua_cl>
+        <qua_ph>6.7</qua_ph>
+      </qua_data>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>
