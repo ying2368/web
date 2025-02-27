@@ -14,7 +14,7 @@ CREATE TABLE users (
 CREATE TABLE courses (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    teacher_id INT,
+    teacher_name VARCHAR(100) NOT NULL,
     classroom VARCHAR(50) NOT NULL,
     start_time DATETIME NOT NULL,
     end_time DATETIME NOT NULL,

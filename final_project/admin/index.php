@@ -31,13 +31,16 @@ $user_logged_in = isset($_SESSION['user_id']);
                         <a class="nav-link active" href="index.php">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="teachers.php">師資介紹</a>
+                        <a class="nav-link active" href="teachers.php">師資介紹</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="manage_instruments.php">樂器購買</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="booking.php">預約課程</a>
+                        <a class="nav-link active" href="manage_order.php">樂器訂單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_course.php">課程管理</a>
                     </li>
                     <li class="nav-item">
                         <?php if ($user_logged_in): ?>

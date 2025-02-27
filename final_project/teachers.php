@@ -15,9 +15,9 @@ $user_logged_in = isset($_SESSION['user_id']);
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- Page Specific CSS -->
-    <link rel="stylesheet" href="../styles/teachers.css">
+    <link rel="stylesheet" href="styles/teachers.css">
 </head>
 
 <body>
@@ -44,9 +44,9 @@ $user_logged_in = isset($_SESSION['user_id']);
                     </li>
                     <li class="nav-item">
                         <?php if ($user_logged_in): ?>
-                                <a class="nav-link" href="../logout.php">登出</a>
+                                <a class="nav-link" href="logout.php">登出</a>
                         <?php else: ?>
-                                <a class="nav-link" href="../login.php">登入</a>
+                                <a class="nav-link" href="login.php">登入</a>
                         <?php endif; ?>
                     </li>
                 </ul>
@@ -61,7 +61,7 @@ $user_logged_in = isset($_SESSION['user_id']);
             <!-- 鋼琴老師 -->
             <div class="col-md-6 col-lg-3">
                 <div class="teacher-card">
-                    <img src="../images/teachers/teacher-piano.jpg" class="teacher-img" alt="芬老師">
+                    <img src="images/teachers/teacher-piano.jpg" class="teacher-img" alt="芬老師">
                     <div class="teacher-info">
                         <h3>芬多精 老師</h3>
                         <h4>鋼琴教學</h4>
@@ -88,7 +88,7 @@ $user_logged_in = isset($_SESSION['user_id']);
             <!-- 吉他老師 -->
             <div class="col-md-6 col-lg-3">
                 <div class="teacher-card">
-                    <img src="../images/teachers/teacher-guitar.jpg" class="teacher-img" alt="約翰老師">
+                    <img src="images/teachers/teacher-guitar.jpg" class="teacher-img" alt="約翰老師">
                     <div class="teacher-info">
                         <h3>約翰欣梅爾 老師</h3>
                         <h4>吉他教學</h4>
@@ -115,7 +115,7 @@ $user_logged_in = isset($_SESSION['user_id']);
             <!-- 爵士鼓老師 -->
             <div class="col-md-6 col-lg-3">
                 <div class="teacher-card">
-                    <img src="../images/teachers/teacher-drum.jpg" class="teacher-img" alt="冠老師">
+                    <img src="images/teachers/teacher-drum.jpg" class="teacher-img" alt="冠老師">
                     <div class="teacher-info">
                         <h3>冠軍佑子 老師</h3>
                         <h4>爵士鼓教學</h4>
@@ -142,7 +142,7 @@ $user_logged_in = isset($_SESSION['user_id']);
             <!-- 聲樂老師 -->
             <div class="col-md-6 col-lg-3">
                 <div class="teacher-card">
-                    <img src="../images/teachers/teacher-vocal.jpg" class="teacher-img" alt="邱老師">
+                    <img src="images/teachers/teacher-vocal.jpg" class="teacher-img" alt="邱老師">
                     <div class="teacher-info">
                         <h3>邱雞丁 老師</h3>
                         <h4>聲樂教學</h4>
